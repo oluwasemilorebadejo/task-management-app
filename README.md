@@ -10,8 +10,8 @@ A simple web app for managing tasks.
 
 ### Installation
 1. Clone the repository:
-`git clone https://github.com/user/task-app.git
-`
+```git clone https://github.com/user/task-app.git
+```
 2. Install dependencies:
 `cd task-app
 npm install
