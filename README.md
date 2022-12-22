@@ -10,8 +10,8 @@ A simple web app for managing tasks.
 
 ### Installation
 1. Clone the repository:
-```git clone https://github.com/user/task-app.git
-```
+`git clone https://github.com/user/task-app.git
+`
 2. Install dependencies:
 `cd task-app
 npm install
@@ -29,7 +29,9 @@ The task management app provides a simple RESTful API for managing tasks.
 `GET /tasks
 `
 ### Response
-`200 OK
+```js 
+200 OK
+
 [
   {
     "id": "1",
@@ -41,46 +43,58 @@ The task management app provides a simple RESTful API for managing tasks.
     "title": "Write documentation",
     "completed": true
   }
-]`
+]
+```
+
 ### Add a new task
-`POST /tasks
+```js
+POST /tasks
+
 {
   "title": "Learn Node.js",
   "completed": false
 }
-`
+```
 ### Response
-`201 Created
+```js 
+201 Created
+
 {
   "id": "1",
   "title": "Learn Node.js",
   "completed": false
 }
-`
+```
 ### Update an existing task
-`PUT /tasks/1
+```js
+PUT /tasks/1
 
 {
   "title": "Learn Express",
   "completed": true
 }
-`
+```
 ### Response 
-`200 OK
+```js
+200 OK
+
 {
   "id": "1",
   "title": "Learn Express",
   "completed": true
 }
-`
+```
 ### Delete an existing task
 `DELETE /tasks/1
 `
 ### Response 
-`200 OK
+```js
+204 No Content
+
 {
   "id": "1",
   "title": "Learn Express",
   "completed": true
 }
-`
+```
+
