@@ -89,7 +89,7 @@ PUT /tasks/1
 `
 ### Response 
 ```js
-204 No Content
+200 OK
 
 {
   "id": "1",
